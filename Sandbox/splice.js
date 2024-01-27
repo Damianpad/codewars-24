@@ -29,3 +29,11 @@ let mySimpleArr = [1,2,3,4,5]
 let newArr = mySimpleArr.splice(1,1)
 console.log(newArr); // Returns [2]
 console.log(mySimpleArr); // Returns [1,3,4,5]
+
+// PROBLEM 3: Given an array of strings, remove the first 3 elements
+
+let myStr = ["Apple", "Bananas", "Strawberry", "Mango", "Grape"];
+
+let newStr = myStr.splice(0, 3);
+console.log(newStr);  // Returns ['Apple', 'Bananas', 'Strawberry'];
+console.log(myStr);  // Returns ['Mango', 'Grape'];
