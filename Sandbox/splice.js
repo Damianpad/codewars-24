@@ -60,3 +60,14 @@ function changeNames(arr){
 
 console.log(changeNames(names));
 console.log(names);
+
+// PROBLEM 6: Given an array of numbers, insert the elements 7,8,9 at index 2
+
+const arrNums = [1,2,3,4,5,6,7,8,9];
+
+function insertNums(arr){
+    arr.splice(2, 3, 7, 8, 9);
+    return arr;
+}
+
+console.log(insertNums(arrNums));
