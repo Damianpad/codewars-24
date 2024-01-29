@@ -49,3 +49,14 @@ function middle3(arr) {
 
 console.log(middle3(chars));
 
+// PROBLEM 5: Given an array of names, add the names "Alice" and "Bob" at the beginning of an array
+
+const names = ["Damian", "Ana", "Lizzy", "Sophia", "Bub", "Shelia", "Kassie"];
+
+function changeNames(arr){
+    arr.splice(0,2, "Alice", "Bob");
+    return arr;
+}
+
+console.log(changeNames(names));
+console.log(names);
