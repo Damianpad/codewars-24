@@ -53,9 +53,9 @@ console.log(middle3(chars));
 
 const names = ["Damian", "Ana", "Lizzy", "Sophia", "Bub", "Shelia", "Kassie"];
 
-function changeNames(arr){
-    arr.splice(0,2, "Alice", "Bob");
-    return arr;
+function changeNames(arr) {
+  arr.splice(0, 2, "Alice", "Bob");
+  return arr;
 }
 
 console.log(changeNames(names));
@@ -63,11 +63,51 @@ console.log(names);
 
 // PROBLEM 6: Given an array of numbers, insert the elements 7,8,9 at index 2
 
-const arrNums = [1,2,3,4,5,6,7,8,9];
+const arrNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function insertNums(arr){
-    arr.splice(2, 3, 7, 8, 9);
-    return arr;
+function insertNums(arr) {
+  arr.splice(2, 3, 7, 8, 9);
+  return arr;
 }
 
 console.log(insertNums(arrNums));
+
+// PROBLEM 7: Given an array of colors, remove the elements at even indicies.
+
+let colors = [
+  "red",
+  "green",
+  "yellow",
+  "blue",
+  "purple",
+  "orange",
+  "white",
+  "black",
+];
+
+function evenColors(arr) {
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      arr.splice(arr[i], 1);
+    }
+  }
+  return arr;
+}
+
+console.log(evenColors(colors));
+
+// PROBLEM 8: Given an array of fruits, remove the elements at odd indicies and replace them with the corresponding index value
+
+let fruits = ["Apple", "Bananas", "Strawberry", "Mango", "Grape"];
+
+function removeOdd(arr) {
+  for (let i = 0; i <= arr.length; i++) {
+    if (i % 2 === 1) {
+      arr.splice(i, 1, i);
+    }
+  }
+  return arr;
+}
+
+console.log(removeOdd(fruits));
+console.log(fruits);
