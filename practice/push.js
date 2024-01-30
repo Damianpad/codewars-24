@@ -29,4 +29,27 @@ console.log(mergeArrays(firstArr, secondArr));
 console.log(firstArr);
 console.log(secondArr);
 
+// PROBLEM 3: Write a function copyAndAdd that takes an array and an element as a parameters. The function should create a copy of the array using the slice method and then add the given element to the end of the copied array using the push method. The function should return the modified array.
+let copyArr = [1, 2, 3, 4, 5];
 
+function copyAndAdd(arr, element) {
+  let arrCopy = arr.slice();
+  arrCopy.push(element);
+  return arrCopy;
+}
+
+console.log(copyAndAdd(copyArr, 8));
+console.log(copyArr);
+
+// PROBLEM 4: Create a function flattenArrays that takes an aray of arrays as a parameter. The function should use the push method to flatten the nested arrays into a single array. Return the flattened array.
+let nestedArr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+function flattenArrays(arr) {
+    return arr.flat();
+}
+
+console.log(flattenArrays(nestedArr));
