@@ -23,3 +23,16 @@ Problem 3: Given an array of strings, remove the first three elements.
 let strArr = ["Cat", "Dog", "Bird", "Monkey", "Horse"];
 
 
+
+/*
+Map:
+
+Problem 1: Given an array of integers, return a new array with each value doubled.
+
+*/
+
+let arrInts = [1,2,3];
+
+const maps= (x) => {
+    return x.map(element => element * 2);
+}
