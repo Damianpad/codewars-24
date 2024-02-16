@@ -1,9 +1,3 @@
-let age = 29;
-
-console.log(typeof age);
-
-console.log(typeof age.toString());
-console.log(typeof age);
 
 /*
 Problem 1: Create a 'Person' object with properties 'name' and 'age'. Override the '.toString()' method to retun a string in the format: "Name: [name], Age:[Age]".
