@@ -17,3 +17,13 @@ const { name, age } = person;
 
 console.log(name);
 console.log(age);
+
+
+// Example of function parameter destructuring
+
+function printUser({ name, age }){
+    console.log(`Name: ${name}, Age: ${age}`);
+}
+
+const user = { name: 'Damian', age: 29};
+printUser(user);
