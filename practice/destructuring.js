@@ -27,3 +27,12 @@ function printUser({ name, age }){
 
 const user = { name: 'Damian', age: 29};
 printUser(user);
+
+
+// Example of Rest parameter in Array Destructuring
+const colors = ['red', 'green', 'blue', 'yellow'];
+const [firstColor, SecondColor, ...restColors] = colors;
+
+console.log(firstColor);
+console.log(SecondColor);
+console.log(restColors);
