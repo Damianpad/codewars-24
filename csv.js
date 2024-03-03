@@ -54,3 +54,9 @@ function toCsvText(arr) {
 
 console.log(toCsvText(exampleArr));
 
+
+function toCsvText2(array) {
+    return array.join('\n');
+ }
+
+ console.log(toCsvText2(exampleArr));
