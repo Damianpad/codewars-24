@@ -22,3 +22,13 @@ const mapMethod = array.map((element) => {
     return element + 1;
 })
 console.log(mapMethod);
+
+// Filter Method
+const filterMethod = array.filter((element) => {
+    return element % 2 === 0;
+})
+
+// Reduce Method 
+const sum = array.reduce((accumulator, element) => {
+    return accumulator + element
+})
