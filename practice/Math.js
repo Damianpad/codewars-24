@@ -26,3 +26,11 @@ console.log(Math.max(-1, -33, 0)); // returns 0
 console.log(Math.min()); // returns Infinity
 console.log(Math.min(2, 44, 0, 100, 23)); // returns 0
 console.log(Math.min(-1, -33, 0)); // returns 33
+
+// Math.pow(x, y) returns x raised to the power of y
+console.log(Math.pow(1,2)); // returns 1
+console.log(Math.pow(5,3)); // returns 125
+
+// Math.sqrt(X) returns the square root of a number x
+console.log(Math.sqrt(2)); // returns 1.4142135623730951
+console.log(Math.sqrt(9)); // returns 3
